@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- section 1 -->
+    <div class="bg-[#F3EEE7]">
+        <div class="py-4">
+            <h1 class=" max-w-6xl mx-auto text-xl font-bold flex item-center ">Welcome to our international shop! Enjoy
+                free shipping on orders $100 & up. <p class="underline underline-offset-1 text-[#D51243] ml-3 ">Shop Now
+                    <i class="fa-solid fa-arrow-right ml-2 "></i>
+                </p>
+            </h1>
+        </div>
+    </div>
+    <div class="max-w-6xl mx-auto">
+        <header class="flex items-center justify-between gap-10 p-4 bg-white ">
+            <!-- Logo -->
+            <div class="text-4xl font-bold text-black">
+                <span class="text-pink-500">ni</span>nico
+            </div>
+
+            <!-- Search Bar -->
+            <div class="flex-1 mx-4">
+                <input type="text" placeholder="Search products..."
+                    class=" px-4 w-full py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" />
+            </div>
+
+            <!-- Language and Currency Selectors -->
+            <div class="flex items-center space-x-4">
+                <!-- Language -->
+                <div class="relative">
+                    <button class="flex px-6 py-4 items-center space-x-2 border  text-black">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_Kingdom.svg"
+                            alt="UK Flag" class="w-6 h-4">
+                        <span>English</span>
+                        <i class="fas fa-chevron-down text-sm"></i>
+                    </button>
+                </div>
+
+                <!-- Currency -->
+                <div class="relative">
+                    <button class="flex border px-10 py-4 items-center space-x-2 text-black">
+                        <span>USD</span>
+                        <i class="fas fa-chevron-down text-sm"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Icons -->
+            <div class="flex items-center space-x-6">
+                <!-- Cart -->
+                <div class="relative">
+                    <i class="fas fa-shopping-cart text-3xl"></i>
+                    <span
+                        class="absolute top-0 right-0 w-4 h-4 text-xs text-white bg-pink-500 rounded-full flex items-center justify-center">2</span>
+                </div>
+
+                <!-- User Profile -->
+                <i class="fas fa-user text-3xl"></i>
+
+                <!-- Wishlist -->
+                <i class="fas fa-heart text-3xl"></i>
+            </div>
+        </header>
+    </div>
+</body>
+
+</html>
