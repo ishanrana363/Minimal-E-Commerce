@@ -14,83 +14,91 @@
 
     <div class="bg-[#F3EEE7]">
         <div class="py-4">
-            <h1 class=" max-w-6xl mx-auto text-xl font-bold flex item-center ">Welcome to our international shop! Enjoy
-                free shipping on orders $100 & up. <p class="underline underline-offset-1 text-[#D51243] ml-3 ">Shop Now
-                    <i class="fa-solid fa-arrow-right ml-2 "></i>
-                </p>
-            </h1>
+            <div class="max-w-6xl mx-auto px-4 text-center md:text-left">
+                <h1
+                    class="text-lg sm:text-xl md:text-2xl font-bold flex flex-col md:flex-row items-center justify-center md:justify-start">
+                    Welcome to our international shop! Enjoy free shipping on orders $100 & up.
+                    <a href="#"
+                        class="text-[#D51243] underline underline-offset-1 ml-0 md:ml-3 mt-2 md:mt-0 flex items-center">
+                        Shop Now <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </h1>
+            </div>
         </div>
     </div>
+
 
     <!-- section 1 end -->
 
     <!-- search bar section start-->
 
     <div class="max-w-6xl mx-auto">
-        <header class="flex items-center justify-between gap-10 p-4 bg-white ">
+        <header class="flex flex-wrap items-center justify-between gap-4 sm:gap-6 p-4 bg-white">
             <!-- Logo -->
-            <div class="text-4xl font-bold text-black">
+            <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
                 <span class="text-pink-500">ni</span>nico
             </div>
 
             <!-- Search Bar -->
-            <div class="flex-1 mx-4">
+            <div class="flex-1 w-full sm:w-auto mx-4 mt-2 sm:mt-0">
                 <input type="text" placeholder="Search products..."
-                    class=" px-4 w-full py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" />
+                    class="w-full px-4 py-2 sm:py-3 md:py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" />
             </div>
 
             <!-- Language and Currency Selectors -->
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4 sm:space-x-6">
                 <!-- Language -->
                 <div class="relative">
-                    <button class="flex px-6 py-4 items-center space-x-2 border  text-black">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_Kingdom.svg"
-                            alt="UK Flag" class="w-6 h-4">
-                        <span>English</span>
+                    <button class="flex px-2 sm:px-6 py-2 items-center space-x-2 border text-black">
+                        <span class="">English</span>
                         <i class="fas fa-chevron-down text-sm"></i>
                     </button>
                 </div>
 
                 <!-- Currency -->
                 <div class="relative">
-                    <button class="flex border px-10 py-4 items-center space-x-2 text-black">
-                        <span>USD</span>
+                    <button class="flex px-6 sm:px-8 py-2 sm:py-3 md:py-4 items-center space-x-2 border text-black">
+                        <span class="hidden sm:inline">USD</span>
                         <i class="fas fa-chevron-down text-sm"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Icons -->
-            <div class="flex items-center space-x-6">
+            <!-- Icons (Cart, User Profile, Wishlist) -->
+            <div class="flex items-center space-x-4 sm:space-x-6">
                 <!-- Cart -->
                 <div class="relative">
-                    <i class="fas fa-shopping-cart text-3xl"></i>
+                    <i class="fas fa-shopping-cart text-xl sm:text-2xl md:text-3xl"></i>
                     <span
-                        class="absolute top-0 right-0 w-4 h-4 text-xs text-white bg-pink-500 rounded-full flex items-center justify-center">2</span>
+                        class="absolute top-0 right-0 w-4 h-4 sm:w-5 sm:h-5 text-xs sm:text-sm text-white bg-pink-500 rounded-full flex items-center justify-center">2</span>
                 </div>
 
                 <!-- User Profile -->
-                <i class="fas fa-user text-3xl"></i>
+                <i class="fas fa-user text-xl sm:text-2xl md:text-3xl"></i>
 
                 <!-- Wishlist -->
-                <i class="fas fa-heart text-3xl"></i>
+                <i class="fas fa-heart text-xl sm:text-2xl md:text-3xl"></i>
             </div>
         </header>
     </div>
+
 
     <!-- search bar section end-->
 
     <!-- navbar section start  -->
 
-    <div class="max-w-6xl mx-auto  ">
-        <div class=" px-4 flex items-center justify-between">
+    <div class="max-w-6xl mx-auto">
+        <div class="px-4 flex flex-col lg:flex-row items-center justify-between">
             <!-- Left Section -->
-            <div class="flex items-center space-x-4">
+            <div class="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-6">
+                <!-- Categories Button -->
                 <button class="bg-pink-600 text-white px-4 py-4 rounded flex items-center space-x-2">
                     <i class="fas fa-bars"></i>
                     <span>Categories</span>
                 </button>
-                <nav class="hidden lg:flex space-x-6 text-gray-800 font-bold ">
+
+                <!-- Navigation Links -->
+                <nav class="flex flex-col lg:flex-row lg:space-x-6 text-gray-800 font-bold">
                     <a href="#" class="hover:text-pink-600">Home</a>
                     <a href="#" class="hover:text-pink-600">Shop <i class="fas fa-chevron-down text-xs ml-1"></i></a>
                     <a href="#" class="hover:text-pink-600">Pages <i class="fas fa-chevron-down text-xs ml-1"></i></a>
@@ -101,10 +109,13 @@
 
             <!-- Right Section -->
             <div class="flex items-center font-bold space-x-6">
+                <!-- Phone Number -->
                 <div class="flex items-center text-gray-800">
                     <i class="fas fa-phone-alt text-pink-600 mr-2"></i>
                     <span>908. 408. 501. 89</span>
                 </div>
+
+                <!-- Find Store Link -->
                 <div class="flex items-center font-bold text-gray-800">
                     <i class="fas fa-map-marker-alt text-pink-600 mr-2"></i>
                     <a href="#" class="hover:text-pink-600">Find Store</a>
@@ -113,148 +124,147 @@
         </div>
     </div>
 
+
     <!-- navbar section end  -->
 
-    <!-- banner section start -->
+    <!-- Banner Section Start -->
+    <div class="max-w-6xl mx-auto  px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Main Banner -->
+            <div class="col-span-1 lg:col-span-3 p-8 rounded-lg flex items-center relative bg-[#F5EEE8]">
+                <!-- Text Content -->
+                <div class="max-w-md">
+                    <p class="text-red-500 font-semibold text-sm sm:text-base">Accessories</p>
+                    <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug">
+                        Up To <span class="text-pink-500">40% Off</span> <br>
+                        Latest Creations
+                    </h1>
+                    <button
+                        class="mt-6 px-4 sm:px-6 py-2 bg-black text-white rounded-md shadow-md hover:bg-gray-800 transition">
+                        Shop Now <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
 
-    <div class="max-w-6xl mx-auto h-[90vh]  ">
-        <div class=" mx-auto px-4 ">
-            <!-- Section Wrapper -->
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-                <!-- Main Banner -->
-                <div class="col-span-3 p-8 rounded-lg flex items-center relative bg-[#F5EEE8] ">
-                    <!-- Text Content -->
-                    <div class="max-w-md">
-                        <p class="text-red-500 font-semibold">Accessories</p>
-                        <h1 class="text-4xl font-bold leading-snug">
-                            Up To <span class="text-pink-500">40% Off</span> <br>
-                            latest Creations
-                        </h1>
-                        <button
-                            class="mt-6 px-6 py-2 bg-black text-white rounded-md shadow-md hover:bg-gray-800 transition">
-                            Shop Now <i class="fas fa-arrow-right ml-2"></i>
-                        </button>
-                    </div>
+                <!-- Image -->
+                <div class="absolute right-0 hidden lg:block">
+                    <img src="https://via.placeholder.com/400x300" alt="Vases" class="w-auto max-h-[300px]">
+                </div>
+            </div>
 
-                    <!-- Image -->
-                    <div class="absolute right-0 ">
-                        <img src="https://via.placeholder.com/400x300" alt="Vases" class="w-auto ">
+            <!-- Sidebar Cards -->
+            <div class="space-y-4">
+                <!-- Card 1 -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <p class="text-pink-500 text-xs sm:text-sm font-semibold">Handmade</p>
+                    <h2 class="text-base sm:text-lg font-bold mt-1">New Modern & Stylish Crafts</h2>
+                    <div class="mt-4">
+                        <img src="https://via.placeholder.com/150x100" alt="Crafts" class="w-full rounded-md">
                     </div>
                 </div>
 
-                <!-- Sidebar Cards -->
-                <div class="space-y-4">
-                    <!-- Card 1 -->
-                    <div class="bg-white p-4 shadow-md rounded-lg">
-                        <p class="text-pink-500 text-sm font-semibold">Hand made</p>
-                        <h2 class="text-lg font-bold mt-1">New Modern & Stylist Crafts</h2>
-                        <div class="mt-4">
-                            <img src="https://via.placeholder.com/150x100" alt="Crafts" class="w-full rounded-md">
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="bg-white p-4 shadow-md rounded-lg">
-                        <p class="text-red-500 text-sm font-semibold">Popular</p>
-                        <h2 class="text-lg font-bold mt-1">Energy with our newest collection</h2>
-                        <div class="mt-4">
-                            <img src="https://via.placeholder.com/150x100" alt="Collection" class="w-full rounded-md">
-                        </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <p class="text-red-500 text-xs sm:text-sm font-semibold">Popular</p>
+                    <h2 class="text-base sm:text-lg font-bold mt-1">Energy with Our Newest Collection</h2>
+                    <div class="mt-4">
+                        <img src="https://via.placeholder.com/150x100" alt="Collection" class="w-full rounded-md">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Banner Section End -->
 
-    <!-- banner section end -->
-
-    <!-- Top Categories section start -->
-
-    <div class="max-w-6xl mx-auto px-4 my-12 border-b pb-12 ">
-        <h2 class="text-2xl font-bold text-gray-800 mb-8">
+    <!-- Top Categories Section Start -->
+    <div class="max-w-6xl  mx-auto px-4 my-12 border-b pb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
             Top <span class="text-red-500">Categories</span>
         </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            <!-- Driftwood Table Decor -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <!-- Category Cards -->
             <div class="relative bg-white shadow-md rounded-full p-6 flex flex-col items-center">
-                <span class="text-lg text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">20</span>
-                <i class="fas fa-chair text-gray-700 text-4xl mb-4"></i>
-                <p class="text-center text-gray-700 text-sm">Driftwood Table Decor</p>
+                <span
+                    class="text-sm sm:text-base text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">20</span>
+                <i class="fas fa-chair text-gray-700 text-3xl md:text-4xl mb-4"></i>
+                <p class="text-center text-gray-700 text-sm md:text-base">Driftwood Table Decor</p>
             </div>
-            <!-- Floor Driftwood Sculpture -->
             <div class="relative bg-white shadow-md rounded-full p-6 flex flex-col items-center">
-                <span class="text-lg text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">12</span>
-                <i class="fas fa-drafting-compass text-gray-700 text-4xl mb-4"></i>
-                <p class="text-center text-gray-700 text-sm">Floor Driftwood Sculpture</p>
+                <span
+                    class="text-sm sm:text-base text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">12</span>
+                <i class="fas fa-drafting-compass text-gray-700 text-3xl md:text-4xl mb-4"></i>
+                <p class="text-center text-gray-700 text-sm md:text-base">Floor Driftwood Sculpture</p>
             </div>
-            <!-- Driftwood Christmas Tree -->
             <div class="relative bg-white shadow-md rounded-full p-6 flex flex-col items-center">
-                <span class="text-lg text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">03</span>
-                <i class="fas fa-tree text-gray-700 text-4xl mb-4"></i>
-                <p class="text-center text-gray-700 text-sm">Driftwood Christmas Tree</p>
+                <span
+                    class="text-sm sm:text-base text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">03</span>
+                <i class="fas fa-tree text-gray-700 text-3xl md:text-4xl mb-4"></i>
+                <p class="text-center text-gray-700 text-sm md:text-base">Driftwood Christmas Tree</p>
             </div>
-            <!-- Wooden Bluetooth Speaker -->
             <div class="relative bg-white shadow-md rounded-full p-6 flex flex-col items-center">
-                <span class="text-lg text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">09</span>
-                <i class="fas fa-volume-up text-gray-700 text-4xl mb-4"></i>
-                <p class="text-center text-gray-700 text-sm">Wooden Bluetooth Speaker</p>
+                <span
+                    class="text-sm sm:text-base text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">09</span>
+                <i class="fas fa-volume-up text-gray-700 text-3xl md:text-4xl mb-4"></i>
+                <p class="text-center text-gray-700 text-sm md:text-base">Wooden Bluetooth Speaker</p>
             </div>
-            <!-- Receivers & Amplifiers -->
             <div class="relative bg-white shadow-md rounded-full p-6 flex flex-col items-center">
-                <span class="text-lg text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">10</span>
-                <i class="fas fa-broadcast-tower text-gray-700 text-4xl mb-4"></i>
-                <p class="text-center text-gray-700 text-sm">Receivers & Amplifiers</p>
+                <span
+                    class="text-sm sm:text-base text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">10</span>
+                <i class="fas fa-broadcast-tower text-gray-700 text-3xl md:text-4xl mb-4"></i>
+                <p class="text-center text-gray-700 text-sm md:text-base">Receivers & Amplifiers</p>
             </div>
-            <!-- Appetizer Plate Set -->
             <div class="relative bg-white shadow-md rounded-full p-6 flex flex-col items-center">
-                <span class="text-lg text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">05</span>
-                <i class="fas fa-utensils text-gray-700 text-4xl mb-4"></i>
-                <p class="text-center text-gray-700 text-sm">Appetizer Plate Set</p>
+                <span
+                    class="text-sm sm:text-base text-white bg-red-500 rounded-full px-3 py-1 absolute -top-2 -right-2">05</span>
+                <i class="fas fa-utensils text-gray-700 text-3xl md:text-4xl mb-4"></i>
+                <p class="text-center text-gray-700 text-sm md:text-base">Appetizer Plate Set</p>
             </div>
         </div>
     </div>
+    <!-- Top Categories Section End -->
 
-    <!-- Top Categories section end -->
+
 
     <!-- Popular product section start -->
-    <div class="max-w-6xl  mx-auto px-4">
-        <div class="flex items-center justify-between  border-gray-200 pb-2">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col sm:flex-row items-center justify-between border-b border-gray-200 pb-4">
             <!-- Title -->
-            <h2 class="text-2xl font-bold text-gray-800">
+            <h2 class="text-xl sm:text-2xl font-bold text-gray-800 text-center sm:text-left">
                 Popular <span class="text-red-500">Products</span>
             </h2>
             <!-- Tabs -->
-            <div class="flex items-center space-x-6">
-                <button class="text-red-500 font-bold underline decoration-red-500">All</button>
-                <button class="text-gray-800 hover:text-red-500 transition">Popular</button>
-                <button class="text-gray-800 hover:text-red-500 transition">On Sale</button>
-                <button class="text-gray-800 hover:text-red-500 transition">Best Rated</button>
+            <div class="flex items-center space-x-4 mt-4 sm:mt-0">
+                <button class="text-red-500 font-bold underline decoration-red-500 text-sm sm:text-base">All</button>
+                <button class="text-gray-800 hover:text-red-500 transition text-sm sm:text-base">Popular</button>
+                <button class="text-gray-800 hover:text-red-500 transition text-sm sm:text-base">On Sale</button>
+                <button class="text-gray-800 hover:text-red-500 transition text-sm sm:text-base">Best Rated</button>
             </div>
         </div>
     </div>
+    <!-- Popular Products Section End -->
+
+
 
     <div class="mb-4">
-        <div class="max-w-6xl  mx-auto px-4 px-4">
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- Product 1 -->
                 <div class="bg-white shadow-md rounded-lg p-4">
                     <img src="./asset/img/product-img-1.jpg" alt="Miko Wooden Bluetooth Speaker"
-                        class="w-full h-40 object-contain mb-4">
+                        class="w-full h-36 md:h-40 object-contain mb-4">
                     <p class="text-gray-700 text-sm mb-2">Miko Wooden Bluetooth Speaker</p>
                     <p class="text-gray-800 font-bold">$31.00</p>
                 </div>
                 <!-- Product 2 -->
                 <div class="bg-white shadow-md rounded-lg p-4">
                     <img src="./asset/img/product-img-2.jpg" alt="Gorgeous Wooden Gloves"
-                        class="w-full h-40 object-contain mb-4">
+                        class="w-full h-36 md:h-40 object-contain mb-4">
                     <p class="text-gray-700 text-sm mb-2">Gorgeous Wooden Gloves</p>
                     <p class="text-gray-800 font-bold">$31.00</p>
                 </div>
                 <!-- Product 3 -->
                 <div class="bg-white shadow-md rounded-lg p-4">
                     <img src="./asset/img/product-img-3.jpg" alt="Pinkol Enormous Granite Bottle"
-                        class="w-full h-40 object-contain mb-4">
+                        class="w-full h-36 md:h-40 object-contain mb-4">
                     <p class="text-gray-700 text-sm mb-2">Pinkol Enormous Granite Bottle</p>
                     <p class="text-gray-800 font-bold">$31.00</p>
                 </div>
@@ -263,48 +273,44 @@
                     <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">On
                         Sale</span>
                     <img src="./asset/img/product-img-4.jpg" alt="Gorgeous Aluminum Table"
-                        class="w-full h-40 object-contain mb-4">
+                        class="w-full h-36 md:h-40 object-contain mb-4">
                     <p class="text-gray-700 text-sm mb-2">Gorgeous Aluminum Table</p>
                     <p class="text-gray-800 font-bold">$31.00</p>
                 </div>
                 <!-- Product 5 -->
                 <div class="bg-white shadow-md rounded-lg p-4">
-                    <img src="./asset/img/product-img-5.jpg" alt="Miko Wooden Bluetooth Speaker"
-                        class="w-full h-40 object-contain mb-4">
+                    <img src="./asset/img/product-img-5.jpg" alt="Evo Lightweight Granite Shirt"
+                        class="w-full h-36 md:h-40 object-contain mb-4">
                     <p class="text-gray-700 text-sm mb-2">Evo Lightweight Granite Shirt</p>
                     <p class="text-gray-800 font-bold">$31.00</p>
                 </div>
                 <!-- Product 6 -->
                 <div class="bg-white shadow-md rounded-lg p-4">
-                    <img src="./asset/img/product-img-6.jpg" alt="Gorgeous Wooden Gloves"
-                        class="w-full h-40 object-contain mb-4">
+                    <img src="./asset/img/product-img-6.jpg" alt="CLCo. Incredible Paper Car"
+                        class="w-full h-36 md:h-40 object-contain mb-4">
                     <p class="text-gray-700 text-sm mb-2">CLCo. Incredible Paper Car</p>
                     <p class="text-gray-800 font-bold">$31.00</p>
                 </div>
                 <!-- Product 7 -->
                 <div class="bg-white shadow-md rounded-lg p-4">
-                    <img src="./asset/img/product-img-7.jpg" alt="Pinkol Enormous Granite Bottle"
-                        class="w-full h-40 object-contain mb-4">
-                    <p class="text-gray-700 text-sm mb-2">
-                        Progash Durable Granite Hat
-                    </p>
+                    <img src="./asset/img/product-img-7.jpg" alt="Progash Durable Granite Hat"
+                        class="w-full h-36 md:h-40 object-contain mb-4">
+                    <p class="text-gray-700 text-sm mb-2">Progash Durable Granite Hat</p>
                     <p class="text-gray-800 font-bold">$31.00</p>
                 </div>
                 <!-- Product 8 with On Sale Badge -->
                 <div class="bg-white shadow-md rounded-lg p-4 relative">
                     <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">On
                         Sale</span>
-                    <img src="./asset/img/product-img-8.jpg" alt="Gorgeous Aluminum Table"
-                        class="w-full h-40 object-contain mb-4">
-                    <p class="text-gray-700 text-sm mb-2">
-                        $31.00
-                        product-thumb Purab Enormous Miranda Bottle</p>
+                    <img src="./asset/img/product-img-8.jpg" alt="Purab Enormous Miranda Bottle"
+                        class="w-full h-36 md:h-40 object-contain mb-4">
+                    <p class="text-gray-700 text-sm mb-2">Purab Enormous Miranda Bottle</p>
                     <p class="text-gray-800 font-bold">$31.00</p>
                 </div>
                 <!-- Product 9 -->
                 <div class="bg-white shadow-md rounded-lg p-4">
-                    <img src="./asset/img/product-img-9.jpg" alt="Pinkol Enormous Granite Bottle"
-                        class="w-full h-40 object-contain mb-4">
+                    <img src="./asset/img/product-img-9.jpg" alt="Miklonda Co. Crafted Candles"
+                        class="w-full h-36 md:h-40 object-contain mb-4">
                     <p class="text-gray-700 text-sm mb-2">Miklonda Co. Crafted Candles</p>
                     <p class="text-gray-800 font-bold">$31.00</p>
                 </div>
@@ -312,14 +318,15 @@
                 <div class="bg-white shadow-md rounded-lg p-4 relative">
                     <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">On
                         Sale</span>
-                    <img src="./asset/img/product-img-10.jpg" alt="Gorgeous Aluminum Table"
-                        class="w-full h-40 object-contain mb-4">
+                    <img src="./asset/img/product-img-10.jpg" alt="Pinkol Enormous Granite Bottle"
+                        class="w-full h-36 md:h-40 object-contain mb-4">
                     <p class="text-gray-700 text-sm mb-2">Pinkol Enormous Granite Bottle</p>
                     <p class="text-gray-800 font-bold">$31.00</p>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Popular product section end -->
 
@@ -342,7 +349,8 @@
                     <h2 class="text-4xl my-12 font-bold text-gray-800">Pro2 Abstract Folded Pots</h2>
                     <p class="text-gray-600 text-xl font-semibold mt-3">
                         Elegant pink origami design with a three-dimensional view and decoration co-exist. Great for
-                        adding a decorative touch to any room's décor. Wonderful accent piece for coffee tables or side
+                        adding a decorative touch to any room's décor. Wonderful accent piece for coffee tables or
+                        side
                         tables.
                     </p>
                     <div class="mt-4 flex items-center">
@@ -350,40 +358,133 @@
                         <span class="text-gray-400 line-through text-lg ml-2">$59.00</span>
                     </div>
                     <!-- Countdown Timer -->
-            <div class="mt-6 border-t pt-6 flex justify-end items-center">
-                <!-- Timer Section -->
-                <div class="flex gap-4">
-                    <div class="text-center border p-3 ">
-                        <p class="text-xl font-bold text-gray-800">0</p>
-                        <p class="text-sm text-gray-600">Days</p>
+                    <div class="mt-6 border-t pt-6 flex justify-end items-center">
+                        <!-- Timer Section -->
+                        <div class="flex gap-4">
+                            <div class="text-center border p-3 ">
+                                <p class="text-xl font-bold text-gray-800">0</p>
+                                <p class="text-sm text-gray-600">Days</p>
+                            </div>
+                            <div class="text-center border p-3 ">
+                                <p class="text-xl font-bold text-gray-800">0</p>
+                                <p class="text-sm text-gray-600">Hour</p>
+                            </div>
+                            <div class="text-center border p-3 ">
+                                <p class="text-xl font-bold text-gray-800">0</p>
+                                <p class="text-sm text-gray-600">Minute</p>
+                            </div>
+                            <div class="text-center border p-2 ">
+                                <p class="text-xl font-bold text-gray-800">0</p>
+                                <p class="text-sm text-gray-600">Second</p>
+                            </div>
+                        </div>
+
+                        <!-- Countdown Text -->
+
                     </div>
-                    <div class="text-center border p-3 ">
-                        <p class="text-xl font-bold text-gray-800">0</p>
-                        <p class="text-sm text-gray-600">Hour</p>
+                    <p class="text-gray-600 text-sm flex justify-end ">Remains until the end of the offer</p>
+                    <!--  -->
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- abstact section end -->
+
+        <!-- footer section start -->
+        <div class="bg-gray-100 py-12 lg:px-0 px-12 ">
+            <div class="max-w-6xl mx-auto ">
+                <!-- Footer Content -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+
+                    <!-- Left Section: Company Info -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">ninico</h2>
+                        <p class="text-gray-600 mt-2">Elegant pink origami design three-dimensional view and decoration
+                            co-exist. Great for adding a decorative touch to any room’s decor.</p>
                     </div>
-                    <div class="text-center border p-3 ">
-                        <p class="text-xl font-bold text-gray-800">0</p>
-                        <p class="text-sm text-gray-600">Minute</p>
+
+                    <!-- Middle Left Section: Information -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Information</h3>
+                        <ul class="mt-4 space-y-2 text-gray-600">
+                            <li><a href="#" class="hover:text-pink-600">Custom Service</a></li>
+                            <li><a href="#" class="hover:text-pink-600">FAQs</a></li>
+                            <li><a href="#" class="hover:text-pink-600">Ordering Tracking</a></li>
+                            <li><a href="#" class="hover:text-pink-600">Contacts</a></li>
+                            <li><a href="#" class="hover:text-pink-600">Events</a></li>
+                        </ul>
                     </div>
-                    <div class="text-center border p-2 ">
-                        <p class="text-xl font-bold text-gray-800">0</p>
-                        <p class="text-sm text-gray-600">Second</p>
+
+                    <!-- Middle Right Section: My Account -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">My Account</h3>
+                        <ul class="mt-4 space-y-2 text-gray-600">
+                            <li><a href="#" class="hover:text-pink-600">Delivery Information</a></li>
+                            <li><a href="#" class="hover:text-pink-600">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-pink-600">Discount</a></li>
+                            <li><a href="#" class="hover:text-pink-600">Custom Service</a></li>
+                            <li><a href="#" class="hover:text-pink-600">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Section: Social Network -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Social Network</h3>
+                        <ul class="mt-4 space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <a href="#" class="text-xl hover:text-pink-600 flex items-center">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span class="text-sm ml-3">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center">
+                                <a href="#" class="text-xl hover:text-pink-600 flex items-center">
+                                    <i class="fab fa-dribbble"></i>
+                                    <span class="text-sm ml-3">Dribbble</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center">
+                                <a href="#" class="text-xl hover:text-pink-600 flex items-center">
+                                    <i class="fab fa-twitter"></i>
+                                    <span class="text-sm ml-3">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center">
+                                <a href="#" class="text-xl hover:text-pink-600 flex items-center">
+                                    <i class="fab fa-behance"></i>
+                                    <span class="text-sm ml-3">Behance</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center">
+                                <a href="#" class="text-xl hover:text-pink-600 flex items-center">
+                                    <i class="fab fa-youtube"></i>
+                                    <span class="text-sm ml-3">YouTube</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" text-center">
+                        <h3 class="text-2xl font-semibold text-gray-800">Get Newsletter</h3>
+                        <p class="text-gray-600 mt-4">Get on the list and get 10% off your first order!</p>
+                        <div class="mt-4 flex justify-center">
+                            <input type="email" placeholder="Enter email address"
+                                class="px-4 py-2 w-72 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-pink-600" />
+                            <button
+                                class="bg-pink-600 text-sm text-white px-6 py-1 rounded-r-md hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-600">Subscribe
+                                Now</button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Countdown Text -->
-                
-            </div>
-            <p class="text-gray-600 text-sm flex justify-end ">Remains until the end of the offer</p>
-<!--  -->
-                </div>
-            </div>
+                <!-- Get Newsletter Section -->
 
-            
-            
-    </div>
+            </div>
+        </div>
 
-    <!-- abstact section end -->
+        <!-- footer section end -->
 
 
 
